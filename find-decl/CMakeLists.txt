@@ -1,6 +1,7 @@
 add_clang_executable(find-decl 
   FindDecl.cpp)
 target_link_libraries(find-decl
+  PRIVATE
   clangAST
   clangBasic
   clangFrontend

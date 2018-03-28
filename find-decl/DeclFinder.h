@@ -16,8 +16,8 @@ public:
     auto Decls = Context.getTranslationUnitDecl()->decls();
     for (auto &Decl : Decls) {
       const auto& FileID = SourceManager.getFileID(Decl->getLocation());
-      if (FileID != SourceManager.getMainFileID())
-        continue;
+      //if (FileID != SourceManager.getMainFileID())
+        //continue;
       Visitor.TraverseDecl(Decl);
     }
   }

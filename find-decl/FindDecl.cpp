@@ -16,7 +16,7 @@ static void PrintVersion() {
 static char FindDeclUsage[] = "find-decl <source file>";
 
 int main(int argc, const char **argv) {
-  llvm::cl::SetVersionPrinter(PrintVersion);
+  //llvm::cl::SetVersionPrinter(PrintVersion);
   clang::tooling::CommonOptionsParser option(argc, argv, FindDeclCategory,
                                              FindDeclUsage);
 
